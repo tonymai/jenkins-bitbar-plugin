@@ -74,7 +74,7 @@ end
 
 def run
   builds = latest_builds
-  if builds.nil?
+  unless builds
     puts 'No builds executing'
     return
   end

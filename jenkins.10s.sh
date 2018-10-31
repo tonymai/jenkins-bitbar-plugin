@@ -65,11 +65,7 @@ end
 
 def latest_builds(limit = 5)
   json = get(URL + 'api/json')
-  if json.has_key? 'builds'
-    json['builds'].take(limit).map { |build| get(build['url'] + 'api/json') }
-  else
-    nil
-  end
+  json['builds'].take(limit).map { |build| get(build['url'] + 'api/json') } if json.has_key? 'builds'
 end
 
 def run

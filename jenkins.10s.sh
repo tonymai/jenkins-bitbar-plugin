@@ -29,7 +29,7 @@ def create_blank_config
 end
 
 def config_filename
-  name || File.join(Dir.home, '.jenkins-build-plugin')
+  File.join(Dir.home, '.jenkins-build-plugin')
 end
 
 def invalid_config

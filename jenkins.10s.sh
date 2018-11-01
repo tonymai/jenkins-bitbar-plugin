@@ -53,7 +53,7 @@ def config
   begin
     check_permissions
     config_json ||= File.open(config_filename) do |config_file|
-      JSON.parse(config_file)
+      JSON.load(config_file)
     end
   rescue Errno::ENOENT
     create_blank_config
@@ -64,7 +64,7 @@ def config
   end
 
   invalid_config if config_json.key? 'delete_this_when_done_entering_credentials'
-  invalid_url if config_json['url'].index('http://'.freeze).zero?
+  invalid_url if config_json['url'].index('http://'.freeze)&.zero?
   config_json
 end
 

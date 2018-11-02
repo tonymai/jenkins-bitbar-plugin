@@ -1,4 +1,4 @@
-# jenkins-bitbar-plugin
+# jenkins-bitbar-plugin [![Build Status](https://travis-ci.org/tonymai/jenkins-bitbar-plugin.svg?branch=master)](https://travis-ci.org/tonymai/jenkins-bitbar-plugin)
 Shows the latest builds of a Jenkins project. Result, Build ID, Timestamp, Duration.
 
 ![Jenkins Build Status](https://raw.githubusercontent.com/tonymai/jenkins-bitbar-plugin/master/screenshot.png)

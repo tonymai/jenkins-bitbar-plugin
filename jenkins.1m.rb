@@ -109,7 +109,7 @@ def run
   puts '---'
   print_builds_summary(builds)
   puts '---'
-  puts 'Open In Browser | href= ' + URL
+  puts 'Open In Browser | href=' + URL
 end
 
 run
